@@ -12,7 +12,7 @@ class ClownsController < ApplicationController
   
   def create
     clown = Clown.new(
-      name: params[:name]
+      name: params["name"]
     )
     clown.save
     render json: clown
@@ -29,5 +29,5 @@ class ClownsController < ApplicationController
     clown.delete
     render json: {message: "Clown FIRED"}
   end
-  
+
 end

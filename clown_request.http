@@ -1,0 +1,14 @@
+### Index of Clowns
+GET http://localhost:3000/clowns
+
+### Show of Clown
+GET http://localhost:3000/clowns/2
+
+### Create a Clown (hire)
+POST http://localhost:3000/clowns
+Content-Type: application/json
+
+{
+  "name": "The Joker"
+}
+
